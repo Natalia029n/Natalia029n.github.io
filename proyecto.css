@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+h1{
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+}
+
+.contenedor{
+ display: grid;
+}
+
+.logo{
+  width: 90px ;
+  margin-top: 10px;
+ margin-left: 900px;
+ margin-inline-start: 880px;
+ margin-top: -80px;
+ border-radius: 60px;
+}
+
+.product{
+  prefix: -webkit-image-set(85px);
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta charset="UTF-8">
+    <title>Encantos Nat </title>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        #sidebar {
+            background-color: blueviolet;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            top: 0;
+            left: -500px; /* Inicialmente oculto fuera del área visible */
+            height: 100%;
+            width: 250px;
+            overflow-x: unset;
+            transition: 0.6s;
+        }
+
+        #sidebar a {
+            padding: 1em;
+            text-decoration: none;
+            font-size: 1.5em;
+            color: #fff;
+            display: block;
+        }
+
+        main {
+            margin-left: 220px; /* Ancho de la barra lateral cuando está extendida */
+            transition: 0.5s;
+            padding: 0px;
+        }
+
+        #toggle-btn {
+            font-size: 1.5em;
+            cursor: pointer;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <a href="#" onclick="closeSidebar()"></a>
+        <a href="https://www.canva.com/design/DAF0tti7kBE/ehK_J-jQ0JAWbgyQXib7lQ/edit?utm_content=DAF0tti7kBE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Maquillaje</a>
+        <a href="https://www.canva.com/design/DAF01N3WyNM/jeqrT_IwOpSR1n0FADA5Ow/edit?utm_content=DAF01N3WyNM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Cuidado Facial</a>
+    </div>
+
+    <main>
+        <button id="toggle-btn" onclick="toggleSidebar()">&#9776; Catalogos</button>
+    </main>
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            var main = document.querySelector("main");
+
+            if (sidebar.style.left === "-250px") {
+                sidebar.style.left = "0";
+                main.style.marginLeft = "250px";
+            } else {
+                sidebar.style.left = "-250px";
+                main.style.marginLeft = "0";
+            }
+        }
+
+        function closeSidebar() {ss
+            document.getElementById("sidebar").style.left = "-250px";
+            document.querySelector("main").style.marginLeft = "0";
+        }
+    </script>
+
+</body>
+</html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <section>
+        </div>
+    </section>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: blueviolet;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: blueviolet;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: grey;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+     </head>
+<body>
+    <header>
+        <link rel="stylesheet" href="proyecto.css">
+     <h1>Encantos Nat</h1>
+     <div class="contenedor">
+        <link rel="stylesheet" href="proyecto.css">
+        <img class="logo" src="imagenes de productos de encantos/Logo encantos.jpeg" alt="">
+       </div>
+    </header>
+     <nav>
+        | <ahref="#">Inicio</a> |
+      
+    </nav>
+    <section id="productos">
+        <h2>Productos Destacados</h2>
+
+        <div class="product">
+            <img src="./imagenes de productos de encantos/ILUMINADOR LIQUIDO ELAYA.jpeg" width="200px" alt="Producto 1">
+            <h3>Lo puedes encontrar este y varios productos más en el catalogo de maquillaje</h3>
+            <p>iluminador liquido ELAYA</p>
+            <p>Precio: $20.000</p>
+        </div>
+        <div class="product">
+            <img src="./imagenes de productos de encantos/KIT CUIDADO FACIAL DE ARROZ BIOACUA.jpeg" width="200px" alt="Producto 1">
+            <h3>Lo puedes encontrar este y varios productos más en el catalogo de cuidado facial</h3>
+            <p>kit cuidado facial de arroz bioacua</p>
+            <p>Precio: $90.000</p>
+        </div>
+        <div class="product">
+            <img src="./imagenes de productos de encantos/KIT CUIDADO FACIAL TRUFAS BLANCAS.jpeg" width="200px" alt="Producto 2">
+            <h3>Lo puedes encontrar este y varios productos más en el catalogo de cuidado facial</h3>
+            <p>Kit cuidado facial trufas blancas</p>
+            <p>Precio: $80.000</p>
+            <div class="product">
+                <img src="./imagenes de productos de encantos/MASCARRILLA NEGRA PARA PUNTOS NEGROS.jpeg" width="200px" alt="Producto 2">
+                <h3>Lo puedes encontrar este y varios productos más en el catalogo de cuidado facial</h3>
+                <p>Mascarrilla para puntos negros</p>
+                <p>Precio: $8.000</p>
+                <div class="product">
+                    <img src="./imagenes de productos de encantos/PALETA DE SOMBRAS 35 TONOS.jpeg" width="200px" alt="Producto 2">
+                    <h3>Lo puedes encontrar este y varios productos más en el catalogo de maquillaje</h3>
+                    <p>Paleta de sombras 35 tonos</p>
+                    <p>Precio: $64.000</p>
+                    <div class="product">
+                        <img src="./imagenes de productos de encantos/PALETA DE SOMBRAS Y RUBORES.jpeg" width="200px" alt="Producto 2">
+                        <h3>Lo puedes encontrar este y varios productos más en el catalogo de maquillaje</h3>
+                        <p>Paleta de sombras y rubores</p>
+                        <p>Precio: $16.000</p>
+        </div>
+    </section>
+
+    <section id="nosotros">
+        <h2>objetivo de la tienda </h2> 
+       <p>Nuestro odjetivo como tienda virtual de maquillaje y productos de cuidado facial, es ofrecerte la mejor atención, los mejores productos y al mejor precio. Que estos realcen tus encantos, cumplan todas tus expectativas y te hagan sentir encantadora. </p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+         <img src="./imagenes de productos de encantos/Wpp.png"  width="20"  alt="" > <p>+57 315 347 5958</p> 
+         <a href="https://www.instagram.com/encantos_nat/"><img src="./imagenes de productos de encantos/insta.jfif" width="35" alt=""> <p>encantos_nat</p></a>
+          <a href="https://www.facebook.com/Encantosnat"><img src="./imagenes de productos de encantos/fb.avif" width="40" alt=""> <p>Encantos Nat</p></a>
+         <h2>Tienda virtual</h2>
+         <p>Hecho con amor para tod@s.
+            productos para realizar tus encantos
+            y aumentar tu amor propio.
+         </p>
+         <h3> Política de compra</h3>
+         <p>trabajamos por pedido.</p>
+         <p>Entregamos pedido en un lapso de 3 a 4 días.</p>
+         <p>Manejamos pago contra entrega en Santa Marta.</p>
+         <p>Contamos con envíos nacionales 100% seguros.</p>
+         <p>Envíos nacionales pago sobre pedido, despachado de inmediato</p>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Tienda de Maquillaje</p>
+    </footer>
+</body>
+</html>
+
+        <style>
+            /* Estilos del código anterior... */
+    
+            /* Animación */
+            @keyframes mascaraAnimation {
+                0% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.2);
+                }
+                100% {
+                    transform: scale(1);
+                }
+            }
+    
+            .animated-mascara {
+                animation: mascaraAnimation 2s infinite;
+            }
+        </style>
+    </head>
+    <body>    
+        <section>
+    
+        <footer>
+            <p>&copy; 2023 Tienda de Maquillaje. Todos los derechos reservados.</p>
+        </footer>
+    
+    </body>
+    </html>
